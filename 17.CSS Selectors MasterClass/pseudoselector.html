@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class selector</title>
+
+    <style>
+        /* class selector */
+        .red{
+            background-color: red;
+        }
+
+        
+        /* id selector */
+        #green{
+            background-color: green;
+        }
+
+
+
+        /* child selector */
+        div > p{
+            color: blue;
+            background-color: yellow;
+        }
+
+
+
+        /* descedent selector */
+        div p{
+            color: blue;
+            background-color: black;
+        }
+
+
+        /* universal selector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+
+        /* pseudo selector */
+        /* to make the go to google in yellow colour after we click on the go to google i.e after we visit*/
+        a:visited{
+            color: yellow;
+        }
+
+        /* to make red colour of go to google before we visit the link we use the link  */
+        a:link{
+            color:green;
+        }
+
+
+
+        /* active */
+        /* to make  the colour of  go to google when we click on go to google */
+        a:active{
+            background-color: brown;
+        }
+
+        /* while hovering */
+        /* hover */
+        a:hover{
+            background-color: blue;
+        }
+
+
+
+
+        /*jaha jaha p first child hai uska colour red kr do  */
+        p:first-child{
+            background-color: darkgoldenrod;
+        }
+         
+
+
+
+
+
+
+        </style>
+</head>
+
+<body>
+
+    <div class="red">
+        hey i am div1
+
+        <p>i am a para under div1</p>
+    </div>
+
+    <div id="green">
+        i am div2
+    </div>
+
+    <div>
+        <article>
+            <p>
+                i am a descedent
+            </p>
+        </article>
+    </div>
+
+
+    <a href="https://www.google.com">go to google</a>
+
+
+    <main>
+        <p>i am 1st p tag</p>
+        <P>i am 2nd p tag</P>
+    </main>
+
+
+
+    
+
+</body>
+</html>

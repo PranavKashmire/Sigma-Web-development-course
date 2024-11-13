@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class selector</title>
+
+    <style>
+        /* class selector */
+        .red{
+            background-color: red;
+        }
+
+        
+        /* id selector */
+        #green{
+            background-color: green;
+        }
+
+
+
+        /* child selector */
+        div > p{
+            color: blue;
+            background-color: yellow;
+        }
+
+
+
+        /* descedent selector */
+        div p{
+            color: blue;
+            background-color: black;
+        }
+
+
+        /* universal selector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+
+
+
+    </style>
+</head>
+
+<body>
+
+    <div class="red">
+        hey i am div1
+
+        <p>i am a para under div1</p>
+    </div>
+
+    <div id="green">
+        i am div2
+    </div>
+
+    <div>
+        <article>
+            <p>
+                i am a descedent
+            </p>
+        </article>
+    </div>
+
+
+
+    
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!-- now adding the padding  margin and border-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS box models</title>
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+
+        /* here box is a class selector */
+
+        .box {
+            background-color: red;
+        }
+
+        .box1 {
+            color: yellow;
+            /* giving a padding of 10 pixels, margin of 5px and border of 2px*/
+            padding: 10px;
+            margin: 5px;
+            border: 2px;
+
+
+            height: 150px;
+            box-sizing: border-box;
+            /* margin is not included in box-sizing i.e. content+border+padding */
+            /* also if we dont give box sizing border box property to the height then it will only contain the content height */
+        }
+
+        .box2 {
+            color: plum;
+        }
+    </style>
+
+
+
+</head>
+
+
+<body>
+    <div class="box box1">hey, I am a box</div>
+    <!-- adding multiple classes box  and box1 -->
+
+    <div class="box box2">i am another class</div>
+    <!-- adding multiple classes box  and box2 -->
+
+
+
+</body>
+
+</html>

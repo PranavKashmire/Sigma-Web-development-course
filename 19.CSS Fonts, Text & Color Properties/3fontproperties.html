@@ -1,0 +1,101 @@
+<!-- font properties are as :
+font size , line height , letter spacing ,text-transform: capitalize ,
+text-transform: lowercase , text-transform: underline ,text-decoration: red, 
+text-decoration: dotted; text-decoration-thickness: 20px; 
+ text-indent: 45px; text-overflow: clip;
+ -->
+
+
+<!-- importing the different fonts is done using link or import -->
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>font properties</title>
+
+<style>
+
+    /* including the font using the import(copy form browser and add to style tag) i.e. */
+  @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap');
+
+
+
+    /* adding the font family which we imported */
+
+    p{
+        font-family: 'Baloo Bhai 2', sans-serif;
+        /* font property --> fontsize in pixels*/
+        font-size: 20px;
+        /* also if we dont give any font size then the browser will set then by default */
+
+/* the property line height is the spacing between the two lines of same para */
+        line-height: 4;
+
+
+        /* letter spacing -->spacing between the two letters */
+        letter-spacing: 2px;
+
+        
+    }
+
+
+    h1{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+
+    
+
+          /* giving the font styles  */
+        font-style: italic;
+
+        /* to make text bold we use the weight property */
+         
+        font-weight: 600;
+
+        /* to see how different texts looks on the browser screen visit -
+         https://codepen.io/web-dot-dev/pen/yLojraG  */
+        
+        }
+
+        h2{
+
+            /* the "text transfrom: capatalize" property makes the first letter of text capital(there are such similar other properties in the text transfrom)   */
+            text-transform: capitalize;
+
+            /* other text transform properties */
+
+            text-transform: lowercase;
+            text-decoration: underline;
+               /*to underline the text decoration (here the decoration is the underline)  */
+            text-decoration: red; 
+
+            text-decoration: dotted;
+            text-decoration-thickness: 20px;
+            /* text indent is used to add indent before the text */
+            text-indent: 45px;
+
+            text-overflow: clip;
+        }
+
+  
+</style>
+
+
+</head>
+<body>
+    <div>
+        <h1>Fonts</h1>
+        <h2>about fonts</h2>
+        <p>this is a video on fonts</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto aliquam est, ea possimus eos at aperiam minima doloribus beatae perspiciatis deleniti blanditiis repellendus provident consectetur repudiandae explicabo ad eveniet perferendis?</p>
+    </div>
+
+
+
+
+</body>
+</html>
