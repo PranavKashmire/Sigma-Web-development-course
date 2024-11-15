@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>css shadows and outlines</title>
+
+
+<style>
+    .box{
+        border: 2px solid black;
+        padding: 34px;
+        /* to add shadows  to the box  */
+        box-shadow: 5px 5px 15px 5px #888888; 
+        /* using the inspect method(by right click on the screen) we can change the x-offset  y-offset , blur and spread */
+
+    }
+
+    .textshadow{
+        /* to add shadow to the text */
+        text-shadow: 2px 2px 2px  gray;
+
+
+        /* border is inside and border is outside */
+        outline: 2px solid green;
+        border: 3px solid red;
+    }
+</style>
+
+
+</head>
+<body>
+<div class="box">
+    i am a box
+</div>
+
+<p class="textshadow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas beatae nulla tenetur odio modi nisi laudantium culpa, aliquam placeat alias corporis explicabo consequuntur, commodi quaerat impedit sapiente eveniet quae? Officia vero, nostrum nesciunt perferendis consequatur, similique cupiditate modi quas error dolore beatae iste totam quod.</p>
+
+
+</body>
+</html>

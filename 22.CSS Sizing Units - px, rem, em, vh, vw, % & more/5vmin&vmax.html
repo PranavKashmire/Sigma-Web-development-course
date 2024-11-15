@@ -1,0 +1,83 @@
+<!-- now using vmin and vmax(very less used)-->
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS sizing units</title>
+
+<style>
+    /* using the universal selector */
+    *{  
+        margin: 0;
+        padding: 0;
+    }
+
+
+    html{
+        font-size: 12px; 
+    }
+
+    .box{
+        box-sizing: border-box;
+        border: 2px solid black;
+        /* using the vmin and vmax 
+        (vmin means minimun of height or width of this device*/
+        width: 100vw;
+        margin :auto;
+
+
+        background-color: cadetblue;
+    }
+
+    .container{
+        box-sizing: border-box;
+        border: 2px solid black;
+        
+        width: 100vw;
+        height: 80vh;
+        font-size: 16px;
+
+        margin : 23px auto;
+        
+        background-color: cadetblue;
+
+    }
+
+    .container p{
+        font-size: 2rem;
+        }
+
+    .mycont{
+        background-color: red;
+        color: yellow;
+        font-size: 22px;
+
+        width: 100vmin;
+    }
+</style>
+
+
+
+</head>
+<body>
+    <div class="box">
+        This is a box
+    </div>
+
+
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quia labore praesentium asperiores inventore voluptas, fugiat aut, id exercitationem cupiditate laborum ea, voluptatem autem? Unde maiores ipsam repellat iure eum beatae ex ad, culpa molestiae. Atque sequi pariatur veniam modi. Et tempora in similique. Maxime a ipsum assumenda quos provident inventore dolorem facilis quisquam, aliquam velit?
+        </p>
+        </div>
+
+        <div class="mycont"> I am another container</div>
+
+
+
+
+</body>
+</html>

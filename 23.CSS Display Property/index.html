@@ -1,0 +1,62 @@
+<!-- to make block element into inline element -->
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS display property</title>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .box{
+        border:2px solid blue;
+        /* display :inline; is used to convert  block to inline ,
+        here 'i am a box' inside a div tag (a block element) is converted to inline element*/
+        display: inline;
+
+        /*  if element is a inline element then the padding will be not applied at the top of an element*/
+        padding: 45px;
+        /* similar is for margin */
+        margin: 34px;
+        /* to fix this we need to use -->  display:inline-block;  in place of --> 
+        display :inline; */
+
+    }
+
+    .box1{
+        /* using the display none property only "i am a box"  will appear and the box will not present along with the spaces*/
+        /* display: none; */
+
+        /* visibility:hidden; hides the box but the spaces are present */
+        visibility: hidden;
+    }
+
+</style>
+
+
+
+</head>
+<body>
+    <!-- div is a block element (i.e they will take a full width)-->
+    <div class="box box1">
+        i am a box
+    </div>
+    <div>also another box</div>
+    
+    <!-- span is a inline element -->
+    <span>I am a good</span>
+    <span>boy</span>
+
+    <!-- see other less used properties:
+     https://developer.mozilla.org/en-US/docs/Web/CSS/display --> 
+
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!-- now using em  -->
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS sizing units</title>
+
+    <style>
+        /* using the universal selector */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            box-sizing: border-box;
+            border: 2px solid black;
+
+            width: 100vw;
+            margin: auto;
+
+
+            background-color: cadetblue;
+        }
+
+        .container {
+            box-sizing: border-box;
+            border: 2px solid black;
+
+            width: 100vw;
+            height: 80vh;
+            /* giving the font size of 16px */
+            font-size: 16px;
+
+            margin: 23px auto;
+            /* giving the margin of 23px */
+            background-color: cadetblue;
+
+        }
+
+        .container p {
+            /* here if i dont give a font size then the it will be automatically inherited form .container 
+but , since here i have given a font size it will get that font size */
+            /* font-size: 18px; */
+
+            /* now using the em */
+            font-size: 1.5em;
+            /* font size 1.5em means X1.5(1.5 i.e dedh guna) of the inherited size means 1.5guna of 16px(inherited size)  */
+
+
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <div class="box">
+        This is a box
+    </div>
+
+
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quia labore praesentium asperiores inventore
+            voluptas, fugiat aut, id exercitationem cupiditate laborum ea, voluptatem autem? Unde maiores ipsam repellat
+            iure eum beatae ex ad, culpa molestiae. Atque sequi pariatur veniam modi. Et tempora in similique. Maxime a
+            ipsum assumenda quos provident inventore dolorem facilis quisquam, aliquam velit?
+        </p>
+    </div>
+
+
+
+
+</body>
+
+</html>

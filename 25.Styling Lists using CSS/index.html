@@ -1,0 +1,65 @@
+ <!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>styling lists</title>
+<style>
+    nav ul li{
+    color: cadetblue;
+
+        background-color: rgb(84, 84, 79);
+        /* to include the markers in the yellow background we use: */
+        list-style-position: inside;
+
+        /* to change the list maker styles use : */
+        list-style : devanagri  ;
+
+        /* to add emojis in place of the markers we use:(add that emoji inside the braces) */
+        list-style-type: "";
+
+        border: 2px solid black;
+
+        /* to add images on place of the markers we use: 
+        ; list-style-image: url(paste the url here)*/
+
+        /* list-style-image: url(https://media.istockphoto.com/id/183346577/photo/dubai-mega-city.jpg?s=612x612&w=0&k=20&c=wznnweihtUDRkg0slgTax8KViG2ewS9uV75JbQLBvgY=); */
+    }
+
+</style>
+
+
+</head>
+<body>
+   <nav>
+    <ul>
+        <!-- the list element comprises of a marker and that element(the marker is the dot at the begginning of the element)-->
+        <li>home</li>
+        <li>about</li>
+        <li>contact</li>
+        <!-- now open the inspect slide on the browser :
+            in
+             element.style{
+
+            }
+            bar write: none; after the list-style
+            such that:
+            element.style{
+                list-style: none:
+
+            }
+            this will remove the marker.
+
+            
+            
+        -->
+    </ul>
+   </nav>
+
+
+</body>
+</html>
+  
