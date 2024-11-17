@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS variables</title>
+
+<style>
+    :root{
+        /* here color and seccolor are variables */
+        --color: rgb(122, 122, 146);
+        --seccolor :rgb(31, 31, 154);
+        /* jaha jaha ye dono colours use ho rhe hoge ,  they can be changed and modified form here */
+        /* this is used when some colours are used many times in the website */
+        /* this varibles are global varibles(as varibles declared in the root are always the global varibles) */
+
+
+        --defpad: 23px ;
+        /* default padding of 23pixels using the variables*/
+
+        /* default opacity */
+        --defopacity : 0.2 ;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .nav{
+        /* this is the normal way */
+        /* background-color: burlywood; */
+
+        /* but using the CSS varibles */
+        background-color: var(--color);
+    }
+    .container{
+        /* background-color: aqua; */
+
+        /* using the CSS varibles */
+        background-color: var(--seccolor);
+    }
+    ul{
+        /* will learn about the flex in the further videos
+        it will display the list elements horizontally */
+        display: flex;
+    }
+
+    /* if li is first child of ul */
+    ul li :first-child{
+        list-style: none;
+
+        /* here we declare the varible "--color"  as the global variable */
+        --color : rgb(36, 21, 21) ;
+        /* when both the local and global variables are present then the local is given prefrence */
+        /* background-color: var(--color);*/
+
+        /* if the --color variable is not present then it will use the colour(Or varible) written next to it as: */
+        background-color: var(--color , red);
+
+
+/* using the concept of variables to give padding */
+        padding: var(--defpad);
+
+
+
+        /* to give opacity */
+        opacity: var(--defopacity);
+    }
+
+    
+
+</style>
+
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>home</li>
+            <li>about</li>
+            <li>contact</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus necessitatibus laudantium veritatis soluta odit repudiandae, eaque nam nostrum iusto beatae dicta quam fugiat inventore doloribus, aut odio minus similique aspernatur non! Cumque impedit sapiente quo, quibusdam quidem aliquid id earum, ab quae quis eius officia!
+
+    </div>
+
+
+
+</body>
+</html>

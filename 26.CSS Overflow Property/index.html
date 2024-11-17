@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow</title>
+    <style>
+        .box {
+            width: 50vw;
+            height: 30vh;
+            border: 2px solid black;
+            /* here , the box will overflow on the text */
+
+
+            /* uing the overflow : scroll property we can include all the text inside the box where a horizontal scroll bar appears (and the overflow content will not overflow now) */
+              /* overflow: scroll;   */
+
+             overflow:auto ;  
+            /* using the overflow auto property we can set the box such that if the content overflows then the horizontal scroll bar will appear otherwise not. */
+
+             white-space:nowrap ;
+            /* white-space :nowrap ; krene se --> all the text content will appear in a single line inside the box with a horizontal scroll bar if required */
+
+            
+            text-overflow: ellipsis;
+            /* ye krne se , all the content will appear single line but at end of the box dots will appear for the further text if all the text will not fit in that line */
+
+
+            /* text-overflow and overflow are different properites */
+
+
+            /* we can also overflow in the x and y direction using */
+            overflow-x: hidden;
+            /* here, overflowed content in the x direction , there will be scroll bar */
+
+            overflow-y: scroll;
+            /* here for the overflow content in the y direction , there wil be a scroll bar */
+
+            /* rather than doing the overflow property in x , y direction individually we can do it in single statement as: */
+            overflow: auto hidden;
+            /* which means auto in x and hidden in the y direction */
+        }
+
+
+        
+    </style>
+
+
+</head>
+
+<body>
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia laborum animi eum distinctio impedit, officia,
+        voluptate voluptas deserunt delectus quis quasi architecto doloribus! Dolore quisquam magnam, eveniet minima,
+        cum quaerat architecto ad at nobis nulla, reprehenderit ipsa a dolorem soluta et eligendi illo neque nostrum!
+        Voluptas odit eaque facere repudiandae!
+    </div>
+
+
+</body>
+
+</html>

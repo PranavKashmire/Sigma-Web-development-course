@@ -1,0 +1,110 @@
+<!-- watch video again -->
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS positions</title>
+
+    <style>
+        /* there are 3 type of positons : absolute , relative and static */
+        /* note that position property  of a box is always static(i.e. it cannot be changed) which means that ispe top, bottom , left , right cannot be applied*/
+
+
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            height: 433px;
+            width: 80vw;
+            padding: 3px;
+            margin: 3px;
+
+            border: 2px solid rgb(202, 55, 55);
+        }
+
+        .box1 {
+            background-color: aqua;
+            /* if we make the box1 position as relative then box 1 will stack up upon the box2 then  use z-index*/
+            /* position: relative; */
+            /* z-index: 2 ; */
+
+
+            /* now, if we give the box 1 position absolute then aisa hoga hi box1 hai hi nahi parent box main */
+            /* position: absolute; */
+            /* top: 0px; */
+            /* it will now try to find ki usko 0px kiske relative main hona hai (to  the nearest position ancestor or parent ----> then nearest parent ke relative chalegi)*/
+            /* in absolute position it will try to get the position of the nearest neighbour 
+            and get relative to it 
+            if there is no parent then it will get relative to html*/
+
+
+             /*sticks at one position   */
+            position: sticky;
+            top: 0px;
+            height: 111px;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+
+
+
+        }
+
+        .box2 {
+            background-color: yellow;
+            /* making the position of box 2 relative (so now we can apply the properties of top, bottom , left , right ) */
+
+            /* position: relative;    */
+            /* top: -48px; */
+            /* left:34px;  */
+            /* this stacks the box 2 over box1 */
+        }
+
+        .box3 {
+            background-color: burlywood;
+            /* /if i make the position of the box3 fixed
+            now the position of box3 will get fixed and will not change even if we scroll the page further
+             */
+             /* position: fixed; */
+             /* bottom: 0px; */
+             /* left: 8vw; */
+             /* height: 111px; */
+
+        }
+
+
+        /* transform , filter or perspective properties can also make an element appear as positoned */
+
+        .box4 {
+            background-color: red;
+        }
+
+        .parent {
+            padding: 43px;
+            margin: 34px;
+            border: 3px solid blue;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="parent">
+        <div class="box box1">i am box1</div>
+        <div class="box box2">i am box2 </div>
+        <div class="box box3">i am box3</div>
+        <div class="box box4">i am box4</div>
+    </div>
+
+</body>
+
+</html>
