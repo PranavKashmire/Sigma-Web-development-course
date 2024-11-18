@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS selectors</title>
+
+<style>
+    /* .box:first-child{
+        background-color: red;
+    } */
+
+    /* .box::first-line{
+        color: yellow;
+    } */
+
+    .boxes *{
+     color: blue;
+     border: 2px solid black;
+    }
+
+    /*single slector : 
+    [data-color="primary"]{
+        margin-top : 45px ;
+    } */
+
+    /* grouping of selectors : */
+    /* p,a,.box, [data-color="primary"]{    */
+        /* margin-top : 45px ; */
+        /* padding-top: 45px;   */
+    /* } */
+
+    /* .boxes:nth-child(even){
+        background-color: black;
+    }
+     */
+
+   /* 
+     .box:nth-child(2){
+        background-color: red;
+        /* neeche se 2nd */
+     /* } */
+
+
+
+     /* element can be inserted dynamically via CSS -- > using after and before*/
+     .boxes::before{
+        content: "harry is good";
+     }
+
+     .boxes::after{
+        content:"i am also good";
+        color: tomato;
+     }
+
+     .boxes::selection{
+        /* when we select the text the color apperars aqua */
+        color: aqua;
+     }
+
+     .boxes ::first-letter{
+        color: peru;
+        font-size: 52px;
+     }
+
+
+     .input::placeholder{
+        color: blue;
+
+     }
+
+</style>
+
+
+</head>
+<body>
+    <div class="boxes">
+<div data-color="primary"  class="box">hey i am first box</div>
+<div class="box">hey I am a box</div>
+<div class="box">hey I am a box</div>
+
+<input type="text" placeholder="type your name">
+    </div>
+ 
+
+
+</body>
+</html>

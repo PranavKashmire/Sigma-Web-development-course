@@ -1,0 +1,57 @@
+<!-- note : never use float and clear .
+It was been used very early, not used for modern websites -->
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS float and clear</title>
+
+<style>
+    .cards{
+        border: 2px solid black;
+        display:flow-root;
+        /* using this property of display-flow :root ; -->the  the image will not overflow form  the container but will adjust its dimensions such that the whole image will be visible  
+        in container */
+
+    }
+
+
+    img{
+        /* float : right ; --->>  will allow the content to float to its right */
+        float: right;
+
+        /* if an image is getting overflowed from a container then it will allow that image to overflow(it does not acccomodate in that container) */
+    }
+
+    .card{
+        border: 2px solid red;
+    }
+
+    .card:nth-child(2){
+        background-color: aqua;
+        clear: right;
+        /* clear right means : mere right mein mujhe ek bhi element nahi chaiyee */
+        /* to clear on both sides use : both on place of right*/
+    }
+</style>
+
+
+</head>
+<body>
+    <div class="cards">
+        <img src="https://images.unsplash.com/photo-1510857817970-2a7060a55c8c?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bWFuJTIwb24lMjBib2F0fGVufDB8fDB8fHww" alt="" width="230">
+
+<div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea nobis fugiat ad.</div>
+
+<div class="card">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam tempore perferendis, ipsa consectetur repudiandae sit ullam! Sunt natus non quibusdam? Recusandae blanditiis, consectetur totam at enim quaerat necessitatibus nam doloremque optio vitae? Qui, libero obcaecati tempore odit expedita facilis sapiente aliquid, deleniti suscipit, incidunt ratione repudiandae porro? Illum aperiam ea eum id culpa ad nostrum debitis. Sequi odit veritatis sed aperiam magnam repudiandae libero asperiores illo dolor, molestiae nisi sunt corporis dignissimos a amet totam alias nesciunt deserunt accusantium recusandae vel ad. Reiciendis et, sequi iusto natus nostrum atque optio cupiditate sint, numquam amet deleniti omnis ab nam saepe doloremque, soluta rerum? Nesciunt cupiditate incidunt vero autem voluptatibus repellendus, neque sequi? Fuga quisquam odio animi quia? Nostrum, quos blanditiis, voluptas, debitis excepturi eius totam dolorem nesciunt ea repudiandae quidem expedita odit accusamus veritatis amet dolore. Assumenda, aut! Sunt beatae molestiae atque, alias ea rerum. Accusamus ex temporibus, rerum magni impedit unde tenetur architecto minima quos dolorum at fugiat in! Quam mollitia facilis quibusdam nulla veniam esse, necessitatibus vitae sequi, repellat exercitationem repellendus molestias odit delectus minima officia sunt voluptates maxime nobis eveniet inventore illum! Eum saepe cupiditate nihil architecto voluptates, minus consectetur necessitatibus? Excepturi quam libero exercitationem ab tenetur, cumque ratione. Reprehenderit quasi voluptates ullam, dolores molestias omnis quaerat dignissimos cum deleniti quo ratione eos commodi hic repellendus tempore nisi sed incidunt magni. Alias deserunt quasi aspernatur necessitatibus veniam perferendis corporis quisquam officiis, nesciunt in provident, id obcaecati repellat reprehenderit, quas illo fuga unde hic iste. Quae, aliquam corrupti. Reprehenderit quae suscipit aspernatur atque ratione molestiae placeat non quo ab eius? Accusantium vitae assumenda harum similique ducimus iste adipisci autem ipsam, hic ea! Doloribus dolore, quam esse dicta delectus magni nihil enim natus illo voluptatibus. Natus assumenda provident fuga quod repellat accusantium, veniam praesentium possimus voluptatem quas rerum non dignissimos odit et doloribus voluptates ullam blanditiis hic dicta temporibus! Aliquid, maiores quibusdam! Veniam ad voluptatibus eum, excepturi ea sit placeat iure dolores similique minus! Quia quas iusto, nostrum rerum quis quibusdam placeat esse laborum quae molestiae eligendi. Officia voluptas mollitia eaque? Asperiores, nisi dolorum!</div>
+<div class="card">card 3</div>
+
+    </div>
+  
+
+</body>
+</html>
