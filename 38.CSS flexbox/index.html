@@ -1,0 +1,61 @@
+<!-- flex makes it easy to align elements at centre and at other position -->
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS flexbox</title>
+<style>
+    .container{
+        border: 2px solid red;
+        /* container pe hume display flex dena hai */
+        display: flex;
+        /* now we can use the properties of display flex */
+/* display flex krne se saaare elements L to R align ho jayenge (as default direction for flex is L to R)  */
+        height: 80vh;
+        
+        /* using below line , the content inside container(i.e. flex) will be at horizontally centre */
+        justify-content: center;
+
+        /* using below line , the content inside container(i.e. flex) will be at vertically centre  */
+        align-items: center;
+
+        /* usually flex start; flex end and centre is used  */
+
+
+        /* these are sufficient for flexboxes */
+        /* all  the properties of flex are given always in container */
+
+    }
+
+    .item{
+        height: 92px;
+        width: 92px;
+        border: 2px solid black;
+        margin: 4px;
+        background-color: violet;
+    }
+</style>
+
+
+</head>
+<body>
+    <main>
+        <div class="container">
+<div class="item"></div>
+<div class="item"></div>
+ <div class="item"></div>
+ <div class="item"></div>  
+<div class="item"></div>
+<div class="item"></div>
+<div class="item"></div>
+ 
+    </div>
+    </main>
+
+
+</body>
+</html>
