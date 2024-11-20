@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+    .container{
+        background-color: red;
+        width: 40vw;
+        height: 40vh;
+    }
+
+    .box{
+        background-color: antiquewhite;
+        width: 5vw;
+        height: 4vh;
+
+    /* following are the 4 transition property : */
+    /* transition-property: ;  */
+    /* transition-duration: ; */
+    /* transition-timing-function: ; */
+    /* transition-delay: ; */
+      transition-property: transform ;  
+    /* transition-property: all; */
+    /* note - transition all krne se ye properties sabhi pe lagegi */
+
+    /* or can also do using the comma seperated values */
+    /* transition-property: backgroround-color ,transfrom; */
+
+
+    
+    /* translation duration - kitne sec ke liye trnasition chaiye */
+    transition-duration: 3s;
+
+    transition-timing-function: ease-in-out;
+    /* also can inspect in inspect menu how it will happen by scrolling on transiton timing function */
+
+    /* transition delay is kitne sec ke baad trasition chalu ho */
+    transition-delay: 1s;
+
+
+    }
+
+    .translate{
+        transform:translateX(10vw) translateY(10vh) scale(2);
+        /* when we trasform , for smooth transition we use the transition property  */
+        background-color: blue;
+    }
+</style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="box translate"></div>
+    </div>
+
+
+</body>
+</html>

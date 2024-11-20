@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+    .container{
+        width: 100vw;
+        height: 80vh;
+        border: 2px solid purple;
+        
+    }
+    .box{
+        height: 50px;
+        width: 50px;
+        background-color: beige;
+        border: 2px solid black;
+        /* transform : rotate(xdeg) ; 
+         is used  to rotate the element(box) by x degrees*/
+         /* transform: rotate(45deg); */
+         
+         /*other unit for box xturn(one turn means 360degree) */
+         /* transform: rotate(0.25turn); */
+
+         /* if we want to centre the elements inside box we use : */
+         display: flex;
+         justify-content: center;
+         align-items: center;
+
+         /* to rotate about an axis we use: */
+         transform: rotateX(35deg);
+
+        /* using scaling we can scale the elements(bada or chota) */
+   /* transform: scale(1.6); */
+
+   /* transform: scaleX(34deg); */
+   /* also there are other more  in scaling */
+        
+   /* this is skewing property(note that skewing is never done in Z axis) */
+/* transform: skew(14deg); */
+
+
+/* aslo we can translate that element */
+/* transform: translateX(100px); */
+
+/* to apply multiple translate properties we use : */
+/* transform: rotate(23deg) skew(34deg); */
+
+/* to apply properties in opposite directions we use the minus sign */
+/* transform: translate(-78%); */
+
+/* transfrom properites are usually used while making of nav bar */
+
+/* trnasform origin (deflault at centre ie at -50% -50%) */
+
+
+}
+
+    
+    
+</style>
+
+
+</head>
+<body>
+   <!-- there are two transforms in css : 2d and 3d -->
+
+   <div class="container">
+    <div class="box">box</div>
+   </div>
+
+
+</body>
+</html>

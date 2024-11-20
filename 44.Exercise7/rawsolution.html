@@ -1,0 +1,173 @@
+<!-- draw again on your own once -->
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .logo {  
+        }
+
+        .logo img{
+            width: 164px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-family: "Segoe UI";
+        }
+
+        .right ul {
+            display: flex;
+            gap: 34px;
+        }
+
+        .right ul li {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+        .right ul li span{
+            padding: 0 5px;
+        }
+
+
+        .first{
+            display: flex;
+            /* background-color:aqua ; */
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 63px;
+            margin: 70px;
+            font-family: sans-serif;
+        }
+
+        .first span{
+            font-size: 40px;
+        }
+
+        section span img{
+            margin: 0 13px;
+        }
+
+        .first p{
+            font-size: 23px;
+            width: 44vw;
+            text-align: center;
+        }
+        .btn{
+            background: #00b6d1;
+            padding: 14px 16px;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-weight: 700;
+        }
+        
+        .green{
+            background-color: green;
+        }
+
+        .flex{
+            display: flex;
+        }
+
+        .small{
+            font-size: 12px;
+        }
+
+        .second{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: aquamarine;
+        }
+
+        .item{
+            padding: 23px;
+            background-color: aliceblue;
+
+            border-radius: 12px;
+        }
+
+        .item-lang{
+            font-weight: 500;
+            text-align: center;
+            padding-bottom: 36px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/Dark-logo.png" alt="">
+            </div>
+            <div class="right">
+                <ul>
+                    <li><span>Products </span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        </li>
+                    <li><span>Pricing </span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        </li>
+                    <li><span>Resources </span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        </li>
+                    <li><span>About Us </span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        </li>
+                    <li>
+                        <img src="https://www.ultraedit.com/wp-content/themes/Divi_Child/img/Lang.png" alt=""></div>
+
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="first">
+            <span>Download <b>Utraedit</b> for Windows Reviews
+                <!-- the b tag makes the content inside it  bold -->
+            <img src="https://www.ultraedit.com/wp-content/uploads/2022/10/Reviews.png" alt="" >
+        </span>
+            <p>Download and try UltraEdit before you buy it! This download includes the full Windows version of the text editor.
+            </p>
+            <div>
+                <button class="btn">
+                    Download mac or linux version
+                </button>
+            
+        </section>
+
+        <section class="second">
+            <div class="download">
+                <span>Download UltraEdit</span>
+                <div class="small">v3 hotfix </div>
+            </div>
+
+            <div class="grid">
+                <div class="item">
+                    <div class="item-lang">english</div>
+                    <button class="btnblue">Download 32 bit</button>
+                    <button class="btngreen">Download 62 bit</button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

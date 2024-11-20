@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+   .logo{
+    /* background-color: pink; */
+   }
+
+   /* dont target the img tag directly , rather make a selector such that it will target the individual images */
+   .logo img{
+    width: 164px;
+    height: 10px;
+    
+   }
+
+   nav{
+    display: flex;
+    /* displaying the navbar as the flex */
+    justify-content: space-around;
+    align-items: center;
+   }
+  
+
+  .right ul{
+    display: flex;
+      /* displaying the ul of the right as the flex */
+      gap: 34px;
+      /* the gap property is used for providig a gap in between the eleme nts of the list when we  */
+  }
+
+  .right ul li{
+    list-style: none;
+  }
+</style>
+
+
+
+</head>
+<body>
+   <header>
+    <nav>
+        <div class="logo"></div>
+       <img src="https://www.qbssoftware.de/wp-content/uploads/2022/07/Ultra-Edit_logo.png" alt=""> 
+        <div class="right">
+            <ul>
+                <li>products</li>
+                <li>pricing</li>
+                <li>resources</li>
+                <li>about us</li>
+            </ul>
+        </div>
+    </nav>
+   </header>
+
+
+</body>
+</html>
+
+
+<!-- in the flexbox:
+we do align items centre when we have single row 
+while align content centre-->
