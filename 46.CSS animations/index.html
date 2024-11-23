@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ANIMATIONS</title>
+<style>
+    .container{
+        background-color: rgb(203, 180, 180);
+        height: 80vh;
+        width: 30vw;
+
+    }
+
+    .box{
+        width: 34px;
+        height: 45px;
+        background-color: aqua;
+        animation-name: pranavkaAnimation;
+        animation-duration: 3s;
+
+        /*kitne baar animation chalna chaiyee is animation iteration count  */
+        /* animation-iteration-count: infinite; */
+        animation-iteration-count: 3;
+        
+        animation-timing-function: ease-out;
+        /* animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); */
+        /* we can get this cubic bezier from the inspect menu in the browser  */
+
+        animation-delay: 1s;
+        /* kitne time baad animation start hona chaiye */
+
+        /* to change the direction of animation */
+        /* animation-direction: alternate-reverse; */
+
+        animation-play-state: paused;
+/* are used for  pausing the animation*/
+
+
+/* shortcut for animation(ek saath all the properites): */
+/* animation: name duration timing-function delay iteration-count direction fill-mode;  */
+
+/* to add multiple animations we use comma seperated values: */
+animation: pranavkaAnimation 2s ease-out 3s 1 ,
+pranav 3s ease-in-out 3s 1 ;
+
+    }
+
+    /* to make animations in CSS we make use of keyframes */
+    @keyframes pranavkaAnimation{
+
+   from{
+    /* from se animations start honge */
+    background-color: red;
+   }
+   to{
+    /* aur woh animations to tak chalege */
+    background-color: yellow;
+    transform: translateX(1000px);
+   }
+    }
+
+
+
+    /* for adding multiple animations in CSS :  */
+    @keyframes pranav{
+        0%{transform: rotate(100deg);
+        }
+        20%{
+            transform: rotate(200deg);
+        }
+        50%{
+            transform: rotate(220deg);
+        }
+        80%{
+            transform: rotate(300deg);
+        }
+        100%{
+            transform: rotate(310deg);
+        }
+
+    }
+</style>
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="box transition">box</div>
+    </div>
+
+
+
+</body>
+</html>

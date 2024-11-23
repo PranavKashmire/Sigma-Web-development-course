@@ -1,0 +1,72 @@
+<!-- object fit and object position property -->
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS object fit and positon</title>
+<style>
+    .contianer{
+        height: 634px;
+        width: 688px;
+        border: 2px solid black;
+        /* background-color: azure; */
+
+        /* instead of giving the background colour to the contaier we can give background image as: */
+        background-image: url(https://images.unsplash.com/photo-1532282145199-0f4d84f05246?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDN8fHxlbnwwfHx8fHw%3D&w=1000&q=80);
+
+        /* we can also change the background image position using : */
+        /* background-position: center; */
+
+        /* if the background image is short than that of the height and width of the container than it will repeat itself .
+        now if we want the image to not repeat then : */
+        /* background-repeat: no-repeat; */
+        /* the background will not repeat  */
+
+
+        /* see the background-clip proprty  */
+    }
+    img{
+        height: 634px;
+        width: 688px;
+        /* but doing this (matching the height and width of image and container) image fat jayegi(i.e its aspect ratio will be not maintained)  */
+        /* for that we use the object fit property */
+        /* ye krne se image will display in height and width given in the img container(it  will display the image such that the aspect ratio will be maintained) */
+        /* object-fit: cover; */
+
+
+        /* for puri image dikha do aur space rehenne do(is width aur height  main object maintain rahega*/
+        /* object-fit:  contain; */
+
+        /* but doing this some part of the imaage is not cutted  */
+        /* ye krne se top portion dikhega */
+        /* object-position: top; */
+
+        /* to fill the given height and width we use  (also note that fill is defalut property */
+        /* object-fit: fill;  */
+
+        /* also we can change the object position using the object-poition property */
+        /* object-position: 50% 50%; */
+
+
+
+
+
+
+    }
+</style>
+
+
+</head>
+<body>
+   <div class="contianer">
+    <!-- <img src="https://images.unsplash.com/photo-1532282145199-0f4d84f05246?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDN8fHxlbnwwfHx8fHw%3D&w=1000&q=80" alt=""> -->
+   
+   </div>
+
+
+</body>
+</html>
