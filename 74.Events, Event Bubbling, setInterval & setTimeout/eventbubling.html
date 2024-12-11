@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>event bubling</title>
+
+
+</head>
+<body>
+    <div class="container">
+        <section class="childcontainer">
+            <div class="child">
+
+            </div>
+        </section>
+    </div>
+
+<script>
+    // this event listner is applied to child class
+    document.querySelector(".child").addEventListener("contextmenu",()=>{
+        // e.stopPropagation()
+        // now this will be applied to class "child" only .(ie. we have used stopPropogation concept)
+        alert("dont hack us by right click please")
+
+    })
+
+     // this event listner is applied to childcontainer class
+    document.querySelector(".childcontainer").addEventListener("click",()=>{
+        alert("dont hack us by right click please")
+    })
+
+     // this event listner is applied to contianer class
+    document.querySelector(".container").addEventListener("click",()=>{
+        alert("dont hack us by right click please")
+    })
+
+    // note that event listner applied on "child" will be automaticaly applied to parent classes "cildcontainer" and "container" , this is called bubling .
+
+    // to stop this kind of bubling we use concept of "stopPropogation" 
+    // add it below line of document.queryselector(line 25)
+
+
+
+    // if i want something to happen repeatitively every 2 sec than we use setinterval:
+    setInterval(() => {
+        document.querySelector(".childContainer").style.background= getRandomColor()
+    }, 1000);
+    // it is given in miliseconds (3sec)
+
+
+    // setimeout method is used for some work to complete after some time but only once
+
+    // clearinterval is used to stop setinterval
+    // cleartimeout is used to stop settimeout
+</script>
+
+</body>
+</html>
