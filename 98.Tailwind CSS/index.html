@@ -1,0 +1,73 @@
+
+<!-- tailwind css helps us bulid the website very fast using the utility classes  -->
+<!--add the tailwind css extension to vs code...now we can use tailwind via cdn  -->
+<!-- also dont learn the utility classes -->
+
+<!-- copy the code from tailwind playcdn website 
+and paste in the html body tag. Tailwind will automatically design add styling -->
+
+<!-- go to tailblock cc --- there are different components present there,
+copy the code from there and paste in tailwindplay website -->
+
+<!-- What is NPX? NPX stands for Node Package eXecute. It is simply an NPM package runner. It allows developers to execute any Javascript Package available on the NPM registry without even installing it -->
+
+<!-- to install the tailwind  CSS , we do run the commands in the powershell :
+1. npm init -y
+2. npm install -D tailwindcss
+3.to initialise tailwind css we do - npx tailwindcss init
+     
+    here we get a file nmaed - tailwind.config.js
+     we will go this file if we want to customize the tailwind -->
+
+
+<!--  now will make a input file called input.css :                       -->
+
+<!-- Configure your template paths:
+  /** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./src/**/*.{html,js}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+here we say that watch all the html and js files(i src folder)
+for only html files we write only {html} and similarly for {js}
+
+now run command "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch" in the power shell 
+it will generate a output file in src folder(it says files ko watch kro which are in tailwind config)
+-->
+
+
+<!-- also remeber that we can create responsive webistes using tailwind css -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="src/output.css">
+</head>
+<body>
+
+    <nav class="bg-purple-700 text-white flex md:justify-between flex-col md:flex-row min-h-10 items-center">
+      <div class="logo mx-auto md:mx-0">
+        CodeWithHarry
+      </div>
+      <ul class="flex space-x-3 justify-center md:justify-normal">
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact Us</li>
+      </ul>
+    </nav>
+
+    <main>
+ 
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
